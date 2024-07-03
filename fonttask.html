@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Ga+Maamli&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Ga+Maamli&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Ga+Maamli&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Ga+Maamli&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Ga+Maamli&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Margarine&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+ <style>
+    
+        h1{
+            text-align: center;
+            color: darkviolet;
+            font-family: "Inconsolata", monospace;
+            font-style: normal;
+            font-weight: 700;
+            font-size: xx-large;
+        }
+        #f1{
+            width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:lightcoral ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+        }
+     #f1:hover{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size:xx-large;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f2{
+            width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(55, 166, 213) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+        }
+     #f2:hover{
+        font-family: "Bona Nova SC", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size:xx-large;
+        box-shadow: 0px 0px 2px 3px black;
+
+     }
+     #f3{
+            width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(131, 213, 55) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+        }
+     #f3:hover{
+        font-family: "Anton SC", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f4{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(69, 28, 28) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 30px;
+     }
+     #f4:hover{
+        font-family: "Playwrite ES Deco",cursive;
+        font-weight: 700;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f5{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(40, 28, 69) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f5:hover{
+        font-family: "Arsenal SC", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f6{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(69, 57, 28) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f6:hover{
+        font-family: "Wittgenstein", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f7{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(253, 10, 10) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f7:hover{
+        font-family: "Teko", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f8{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(180, 253, 10) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 30px;
+     }
+     #f8:hover{
+        font-family: "Rubik", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f9{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(10, 253, 233) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f9:hover{
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f10{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgb(240, 21, 203) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f10:hover{
+        font-family: "Karla", sans-serif;
+        font-optical-sizing: auto;
+       font-weight: 500;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f11{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(57, 21, 240, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f11:hover{
+        font-family: "Courgette", cursive;
+      font-weight: 400;
+       font-weight: 500;
+        font-style: normal;
+        box-shadow: 0px 0px 2px 3px black;
+     }
+     #f12{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(1, 20, 4, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 30px;
+     }
+     #f12:hover{
+     font-family: "Ga Maamli", sans-serif;
+     font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 2px 3px black;
+     }
+     #f13{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(189, 128, 128, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f13:hover{
+        
+     font-family: "Bebas Neue", sans-serif;
+     font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 2px 3px black;
+     }
+     #f14{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(84, 231, 62, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f14:hover{
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto; 
+     font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 3px 3px black;
+     }
+     #f15{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(223, 138, 40, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f15:hover{
+     font-family: "Kalam",cursive;
+     font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 3px 3px black;
+     }
+     #f16{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(238, 250, 9, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 30px;
+     }
+     #f16:hover{
+        font-family: "Permanent Marker", cursive;
+     font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 2px 3px black;
+     }
+     #f17{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(15, 149, 216, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f17:hover{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 2px 3px black;
+     }
+     #f18{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(227, 32, 117, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f18:hover{
+     font-family: "Baskervville SC", serif;
+     font-weight: 400;
+     font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 2px 3px black;
+     }
+     #f19{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(23, 13, 213, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 50px;
+     }
+     #f19:hover{
+        font-family: "Bodoni Moda SC", serif;
+     font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 2px 3px black;
+     }
+     #f20{
+        width: 150px; height: 150px;
+            padding: 50px 50px;
+            border: 3px solid black;
+            background-color:rgba(43, 223, 145, 0.852) ;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: xx-large;
+            margin: 50px 30px;
+     }
+     #f20:hover{
+        font-family: "Margarine", sans-serif;
+       font-weight: 400;
+     font-weight: 500;
+     font-style: normal;
+      box-shadow: 0px 0px 2px 3px black;
+     }
+    </style>
+</head>
+<body>
+    <fieldset style="background-color: khaki;">
+        <h1>Types of Fonts</h1>
+        <div>
+            <div id="f1">
+                <span>Roboto</span>
+            </div>
+            <div id="f2">
+                <span>Bona Nova</span>
+            </div>
+            <div id="f3">
+                <span>Anton</span>
+            </div>
+            <div id="f4">
+                <span>Cursive</span>
+            </div>
+        </div>
+        <div>
+            <div id="f5">
+                <span>Arsenal</span>
+            </div>
+            <div id="f6">
+                <span>Wittgenstein</span>
+            </div>
+            <div id="f7">
+                <span>Teko</span>
+            </div>
+            <div id="f8">
+                <span>Rubik</span>
+            </div>
+        </div>
+        <div>
+            <div id="f9">
+                <span>Nunito</span>
+            </div>
+            <div id="f10">
+               <span>Karla</span>
+            </div>
+            <div id="f11">
+                <span>Courgette</span>
+            </div>
+            <div id="f12">
+                <span>Ga Maamli</span>
+            </div>
+        </div>
+        <div>
+            <div id="f13">
+                <span>Bebas Neue</span>
+            </div>
+            <div id="f14">
+                <span>Josefin Sans</span>
+            </div>
+            <div id="f15">
+                <span>kalam</span>
+            </div>
+            <div id="f16">
+                <span>Permanent Marker</span>
+            </div>
+        </div>
+        <div>
+            <div id="f17">
+                <span>Oswald</span>
+            </div>
+            <div id="f18">
+                <span>Baskervville</span>
+            </div>
+            <div id="f19">
+                <span>Bodoni</span>
+            </div>
+            <div id="f20">
+                <span>Margarine</span>
+            </div>
+        </div>
+    </fieldset>
+</body>
+</html>

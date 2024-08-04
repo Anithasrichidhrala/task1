@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+    
+        width:50%;
+        height:70vh;
+        
+       display: grid;
+       grid-template-areas: 
+       "item1 item2 item2 item3"
+       "item1 item4 item5 item6"
+       "item1 item7 item8 item6";
+      gap: 10px;
+      }
+      .container>div{
+        padding:10px;
+        border: 1px solid black;
+           
+      }
+      .item1{
+        grid-area: item1;
+        background-image: url(./imge/HD-wallpaper-3d-butterflies-beautiful-butterfly-fairies-fairy-fairy-lights-glow-magical-neon-twinkle-wings.webp);
+       background-size: cover;
+      }
+      .item2{
+        grid-area: item2;
+        background-image: url(./imge/top-view-3d-wallpaper-jewelry-flowers-with-silver-branches-with-butterflies-incredibly-detailed-ai-generated-digital-illustration-photo.webp);
+       background-size: cover;
+      }
+      .item3{
+        grid-area: item3;
+     background-image: url(./imge/images.jpeg);
+       
+      }
+      .item4{
+        grid-area: item4;
+        background-image: url(./imge/images\ \(4\).jpeg);
+       
+      }
+      .item5{
+        grid-area: item5;
+        background-image: url(./imge/images\ \(3\).jpeg);
+        
+      }
+      .item6{
+        grid-area: item6;
+        background-image: url(./imge/butterfly-wallpapers-that-are-sure-make-your-day_934581-3.avif);
+        background-size: cover;
+      }
+      .item7{
+        grid-area: item7;
+        background-image: url(./imge/images\ \(2\).jpeg);
+        
+      }
+      .item8{
+        grid-area: item8;
+        background-image: url(./imge/images\ \(1\).jpeg);
+        
+      }
+
+    </style>
+</head>
+<body>
+    <h1>Layout-3</h1>
+    <div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+    <div class="item7">7</div>
+    <div class="item8">8</div>
+</div>
+    
+</body>
+</html>

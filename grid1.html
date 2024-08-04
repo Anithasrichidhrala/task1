@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+    
+        width: 90%;
+        height:70vh;
+       display: grid;
+       grid-template-areas: 
+       "item1 item1 item2 item2 item4 item4"
+       "item5 item5 item3 item3 item3 item3"
+       "item6 item6 item3 item3 item3 item3";
+      gap: 10px;
+      }
+      .container>div{
+        padding:10px;
+        border: 1px solid black;    
+      }
+      .item1{
+        grid-area: item1;
+        background-color: aqua;
+      }
+      .item2{
+        grid-area: item2;
+        background-color:aqua;
+      }
+      .item3{
+        grid-area: item3;
+        background-color:lawngreen;
+      }
+      .item4{
+        grid-area: item4;
+        background-color:aqua;
+      }
+      .item5{
+        grid-area: item5;
+        background-color: aqua;
+      }
+      .item6{
+        grid-area: item6;
+        background-color:aqua;
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>Layout-2</h1>
+    <div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+</div>
+    
+    
+</body>
+</html>
